@@ -16,14 +16,55 @@ a {
     --manrope-font: 'Manrope', sans-serif;
     --ibm-plex-font: 'IBM Plex Sans', sans-serif;
     --banner-bg: radial-gradient(circle, #eeaeca 0%, #94bbe9 100%);
-    --footer-bg: radial-gradient(ellipse at top, #307ef3 0%, #04122B 100%);
+    --footer-bg: radial-gradient(ellipse at top, #307ef3, #04122B 100%);
 }
 
 /*-----------------------------------------------------------------
-                        Footer Style Start
+                        Contact Us Section Start
+-------------------------------------------------------------------*/
+#contact {
+    padding: 108px 0;
+}
+#contact h3 {
+    color: #04122B;
+    font-family: var(--manrope-font);
+    font-size: 56px;
+    font-weight: 800;
+}
+#contact p {
+    color: #647989;
+    font-family: var(--ibm-plex-font);
+    font-size: 18px;
+    margin-top: 24px;
+    margin-bottom: 32px;
+}
+#contact button {
+    color: #FFFFFF;
+    font-family: var(--ibm-plex-font);
+    font-size: 18px;
+    font-weight: 700;
+    border: none;
+    background: var(--gradient-btn);
+    padding: 18px 36px;
+    border-radius: 6px;
+}
+#contact .members-img-wrapper {
+    display: flex;
+    gap: 24px;
+    justify-content: end;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+}
+
+/*-----------------------------------------------------------------
+                        Contact Us Section End
+-------------------------------------------------------------------*/
+/*-----------------------------------------------------------------
+                        Footer Section Start
 -------------------------------------------------------------------*/
 #footer {
     background: var(--footer-bg);
+    padding: 108px 0 0;
 }
 #footer .footer-top {
     border-bottom: 1px solid;
@@ -165,5 +206,5 @@ a {
     transition: all 0.3s ease;
 }
 /*-----------------------------------------------------------------
-                        Footer Style End
+                        Footer Section End
 -------------------------------------------------------------------*/
