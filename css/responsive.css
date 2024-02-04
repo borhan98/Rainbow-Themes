@@ -1,0 +1,88 @@
+@media only screen and (max-width: 576px) {
+    #footer .footer-top h3 {
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 24px;
+    }
+    #footer .footer-top .email-icon {
+        left: 10px;
+    }
+    #footer .footer-top .email-field {
+        width: 300px;
+        height: 36px;
+        font-size: 16px;
+        padding-left: 40px;
+    }
+    #footer .footer-top .send-icon {
+        position: absolute;
+        top: 50%;
+        right: 8px;
+        width: 32px;
+        height: 32px;
+        font-size: 14px;
+    }
+    #footer .footer-middle .logo img {
+        width: 150px;
+        height: auto;
+    }
+    #footer .footer-bottom .social-links a {
+        height: 32px;
+        width: 32px;
+        font-size: 16px;
+    }
+}
+@media only screen and (min-width: 576.9px) and (max-width: 768px) {
+    #footer .footer-top h3 {
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 24px;
+    }
+    #footer .footer-top .email-field {
+        width: 300px;
+        height: 36px;
+        font-size: 16px;
+    }
+    #footer .footer-top .send-icon {
+        position: absolute;
+        top: 50%;
+        right: 8px;
+        width: 32px;
+        height: 32px;
+        font-size: 14px;
+    }
+}
+@media only screen and (min-width: 768.9px) and (max-width: 992px) {
+    #footer .footer-top h3 {
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 24px;
+    }
+    #footer .footer-top .email-field {
+        width: 300px;
+        height: 36px;
+        font-size: 16px;
+    }
+    #footer .footer-top .send-icon {
+        position: absolute;
+        top: 50%;
+        right: 8px;
+        width: 32px;
+        height: 32px;
+        font-size: 14px;
+    }
+}
+@media only screen and (min-width: 992.9px) and (max-width: 1200px) {
+    #footer .footer-top .email-field {
+        width: 400px;
+        height: 36px;
+        font-size: 16px;
+    }
+    #footer .footer-top .send-icon {
+        position: absolute;
+        top: 50%;
+        right: 8px;
+        width: 32px;
+        height: 32px;
+        font-size: 14px;
+    }
+}
