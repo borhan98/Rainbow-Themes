@@ -1,4 +1,12 @@
 @media only screen and (max-width: 576px) {
+    /* Header */
+    header .logo img {
+        width: 24px;
+        height: 24px;
+    }
+    header .logo h3 {
+        font-size: 18px;
+    }
     /* Slider */
     #template .slide-wrapper .slide-item {
         max-width: 290px;

@@ -15,21 +15,78 @@
 
 <body>
 
+    <!-- ================= Navbar Section Start ====================== -->
+    <header>
+        <div class="container">
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">
+                        <div class="logo">
+                            <img src="./images/Rainbow-logo.png" alt="Rainbow Themes Logo">
+                            <h3>Rainbow themes</h3>
+                        </div>
+                    </a>
+                    <!-- Menu Collapse button -->
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <!-- Navigation Menu Items -->
+                    <div class="collapse navbar-collapse menu" id="navbarTogglerDemo02">
+                        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Products <span><i class="fa-solid fa-chevron-down"></i></span>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Support</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Blog</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    Premium Services
+                                    <span class="badge">HOT</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Contact</a>
+                            </li>
+                        </ul>
+                        <button class="login-btn">Log In</button>
+                        <button class="hire-btn">
+                            &#x1F91D;
+                            Hire US
+                        </button>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
     <!-- ================= Template Section Start ==================== -->
     <section id="template">
         <div class="customers">
-            <p>
-                We are trusted by
-                <span> 1</span>
-                <span>6</span>
-                <span>8</span>
-                <span>9</span>
-                <span>0</span>
-                customers
-            </p>
+            <p>We are trusted by </p>
+            <span> 1</span>
+            <span>6</span>
+            <span>8</span>
+            <span>9</span>
+            <span>0 </span>
+            <p> customers</p>
         </div>
         <div class="container mb-5 ">
-            <marquee behavior="scroll" loop="infinite">
+            <div class="client-company-logos">
                 <div class="d-flex justify-content-evenly align-items-center column-gap-4 ">
                     <a href="#">
                         <figure>
@@ -57,7 +114,7 @@
                         </figure>
                     </a>
                 </div>
-            </marquee>
+            </div>
         </div>
         <div class="react-icon">
             <div class="container">
@@ -572,8 +629,9 @@
     </Footer>
 
     <!-- ================== Some Js Files ====================== -->
-    <script src="./js/bootstrap.min.js"></script>
     <script src="./js/jquery-1.12.4.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
     <script src="./js/slick.min.js"></script>
     <script src="./js/main.js"></script>
 </body>
