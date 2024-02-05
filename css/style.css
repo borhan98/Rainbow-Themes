@@ -3,14 +3,26 @@
 
 /* Font: IBM Plex Sans */
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;200;300;400;500;600;700&display=swap');
+
 * {
-    padding: 0;
-    margin: 0;
+    padding: 0px;
+    margin: 0px;
     box-sizing: border-box;
 }
 a {
     text-decoration: none;
 }
+ul, li {
+    padding: 0;
+    margin: 0;
+}
+.rating-yellow {
+    color: #FCC418;
+}
+.rating-gray {
+    color: #D4D4D4;
+}
+
 :root {
     --gradient-btn: linear-gradient(90deg, #FE2A5E, #FFA61B);
     --manrope-font: 'Manrope', sans-serif;
@@ -19,9 +31,329 @@ a {
     --footer-bg: radial-gradient(ellipse at top, #307ef3, #04122B 100%);
 }
 
-/*-----------------------------------------------------------------
-                        Contact Us Section Start
--------------------------------------------------------------------*/
+/*-------------------- Client Company logo ------------------------------ */
+marquee img {
+    padding: 10px 0;
+    transition: all 0.3s ease;
+}
+marquee img:hover {
+    transform: scale(1.1);
+}
+/*-------------------- Template Section Start ----------------------------*/
+#template {
+    padding: 108px 0;
+    position: relative;
+}
+#template .customers {
+    position: absolute;
+    top: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 488px;
+    height: 94px;
+    background: #FFFFFF;
+    box-shadow: 1px 1px 20px 5px #00000021;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#template .customers p {
+    color: #000000;
+    font-weight: 500;
+    font-family: var(--manrope-font);
+}
+#template .customers span {
+    background: #060E23;
+    color: #FFFFFF;
+    padding: 4px 8px;
+    margin: 0 -1px;
+    font-size: 24px;
+    font-weight: 700;
+    font-family: var(--manrope-font);
+}
+#template .react-icon {
+    background: url("../images/react-icon.png");
+    background-repeat: no-repeat;
+    background-position: 3% 0;
+}
+#template .template-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    max-width: 352px;
+}
+#template .template-content h6 {
+    color: #04122B;
+    font-family: var(--manrope-font);
+    font-size: 20px;
+    font-weight: 500;
+}
+#template .template-content h3 {
+    color: #04122B;
+    font-family: var(--manrope-font);
+    font-size: 32px;
+    font-weight: 800;
+    line-height: 42px;
+    background: url("../images/react-line.png");
+    background-repeat: no-repeat;
+    background-position: 100px;
+}
+#template .template-content p {
+    color: #6E8393;
+    font-family: var(--ibm-plex-font);
+    font-size: 18px;
+    line-height: 30px;
+}
+#template .template-content a {
+    color: #FF4551;
+    font-family: var(--ibm-plex-font);
+    font-size: 18px;
+    font-weight: 600;
+}
+#template .template-content a span i {
+    transform: rotate(45deg);
+}
+/* -------------------- Template Slider related Style ---------------------------- */
+#template .slide-wrapper {
+    position: relative;
+}
+#template .slide-wrapper .slide-item {
+    max-width: 424px;
+    margin: 24px 4px;
+    box-shadow: 0px 10px 10px 1px #b8b8b887;
+    overflow: hidden;
+}
+#template .slide-wrapper .slide-item figure {
+    width: 100%;
+    border-radius: 12px 12px 0 0;
+    overflow: hidden;
+}
+#template .slide-wrapper .slide-item figure img {
+    width: 100%;
+    height: 216px;
+}
+#template .slide-item .slide-content {
+    padding: 0 24px 24px 24px;
+}
+#template .slide-item .slide-content .sales-price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#template .slide-item .slide-content h3 {
+    color: #04122B;
+    font-family: var(--manrope-font);
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+}
+#template .slide-item .slide-content p {
+    color: #6E8393;
+    font-family: var(--ibm-plex-font);
+    font-size: 18px;
+}
+#template .slide-item .slide-content h5 {
+    color: #04122B;
+    font-weight: 700;
+    font-size: 20px;
+    font-family: var(--manrope-font);
+    margin-top: 16px;
+}
+#template .slide-item .slide-content button {
+    font-family: var(--ibm-plex-font);
+    font-size: 15px;
+    font-weight: 700;
+    background: transparent;
+    color: #B8B8B8;
+    border: 1px solid #B8B8B8;
+    width: 166px;
+    height: 48px;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+#template .slide-item .slide-content button:hover {
+    background: var(--gradient-btn);
+    color: #FFFFFF;
+    border: 1px solid #FFFFFF;
+}
+#template .slide-item .slide-content .cart-btn {
+    width: 74px;
+    height: 48px;
+    border: 1px solid #B8B8B8;
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #B8B8B8;
+    border-radius: 4px;
+}
+#template .slide-item .slide-content .cart-btn:hover {
+    background: transparent;
+    color: #B8B8B8;
+    border: 1px solid #B8B8B8;
+}
+/* -------------------- Slider dots related Style ---------------------- */
+#template .slide-wrapper .slick-dots {
+    position: absolute;
+    bottom: -50px;
+    left: 0;
+    display: flex;
+    gap: 16px;
+    list-style: none;
+}
+#template .slide-wrapper .slick-dots li button {
+    font-size: 0;
+    background: #E6E6E6;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    border: none;
+    position: relative;
+}
+#template .slide-wrapper .slick-dots li.slick-active button {
+    background: #FF4551;
+}
+#template .slide-wrapper .slick-dots li.slick-active button::after {
+    content: '';
+    position: absolute;
+    top: -5px;
+    bottom: -5px;
+    left: -5px;
+    right: -5px;
+    border: 1px solid #FF4551;
+    border-radius: 50%;
+}
+/* -------------------- Slider arrows related Style ---------------------- */
+#template .slide-arrows {
+    display: flex;
+    width: fit-content;
+    gap: 24px;
+    margin-left: auto;
+}
+.prev-arrow,
+.next-arrow {
+    border: 2px solid #FF4551;
+    color: #FF4551;
+    background: transparent;
+    opacity: 40%;
+    width: 48px;
+    height: 48px;
+    border-radius: 44px;
+    transition: all 0.3s ease;
+}
+.prev-arrow:hover,
+.next-arrow:hover {
+    opacity: 1;
+}
+/*--------------------- Customer Empowered Section Start ----------------- */
+#empowered {
+    padding: 88px 0;
+    background: url('../images/circle-shape-bg.png'), url("../images/bar-shape.png");
+    background-repeat: no-repeat;
+    background-position: center bottom;
+}
+#empowered .content {
+    width: fit-content;
+    margin: 50px auto -50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#empowered .customer-empowered {
+    padding: 8px;
+    box-shadow: 1px 1px 20px 5px #00000021;
+    border-radius: 12px;
+    width: 424px;
+    height: 104px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#empowered .customer-empowered span {
+    background: #71BF3E;
+    border-right: 1px solid #FFFFFF;
+    padding: 8px 24px;
+    font-size: 52px;
+    font-family: var(--manrope-font);
+    font-weight: 700;
+    color: #FFFFFF;
+}
+#empowered .customer-empowered span:first-child {
+    border-radius: 5px 0 0 5px;
+}
+#empowered .customer-empowered span:last-child {
+    border-radius: 0 5px 5px 0;
+}
+#empowered .content h4 {
+    color: #04122B;
+    font-size: 28px;
+    font-weight: 800;
+    font-family: var(--manrope-font);
+    margin-top: 24px;
+}
+#empowered .content p {
+    color: #6E8393;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: var(--manrope-font);
+}
+/*--------------------- Gallery Section Start --------------------------*/
+#gallery {
+    padding: 108px 0;
+    background: url("../images/gallery-bg.png"), linear-gradient(-45deg, #060E23, #10224F, #162F6B);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+#gallery h3 {
+    background: #060E23;
+    border: 2px solid #FF4551;
+    border-radius: 76px;
+    padding: 24px;
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    min-width: 300px;
+    position: absolute;
+    top: 230px;
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: 0px 0px 60px 20px #060E23;
+    
+}
+#gallery h3 span {
+    color: #FFFFFF;
+    font-size: 35px;
+    font-weight: 700;
+    font-family: var(--manrope-font);
+}
+#gallery .layout {
+    --gap: 20px;
+    display: flex;
+    justify-content: space-between;
+    gap: var(--gap);
+}
+#gallery .layout .col {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+#gallery .layout .col:first-child {
+    margin-top: 32px;
+}
+#gallery .layout .col:last-child {
+    margin-top: 32px;
+}
+#gallery .layout .col figure {
+    width: 100%;
+}
+#gallery .layout .col figure img {
+    width: 100%;
+}
+/*--------------------- Contact Us Section Start --------------------------*/
 #contact {
     padding: 108px 0;
 }
@@ -45,7 +377,8 @@ a {
     font-weight: 700;
     border: none;
     background: var(--gradient-btn);
-    padding: 18px 36px;
+    width: 166px;
+    height: 48px;
     border-radius: 6px;
 }
 #contact .members-img-wrapper {
@@ -55,13 +388,7 @@ a {
     flex-wrap: wrap;
     flex-direction: row-reverse;
 }
-
-/*-----------------------------------------------------------------
-                        Contact Us Section End
--------------------------------------------------------------------*/
-/*-----------------------------------------------------------------
-                        Footer Section Start
--------------------------------------------------------------------*/
+/*--------------------- Footer Section Start -------------------------------*/
 #footer {
     background: var(--footer-bg);
     padding: 108px 0 0;
@@ -120,9 +447,18 @@ a {
 #footer .footer-top .email-field::placeholder {
     color: #9FACB6;
 }
-
+#footer .footer-middle .logo {
+    display: flex;
+    align-items: center;
+}
 #footer .footer-middle .logo img {
-    width: 270px;
+    width: 56px;
+    height: 56px;
+}
+#footer .footer-middle .logo h3 {
+    text-transform: uppercase;
+    color: #FFFFFF;
+    font-weight: 700;
 }
 #footer .footer-middle .about {
     font-family: var(--ibm-plex-font);
@@ -137,7 +473,7 @@ a {
     margin-bottom: 16px;
 }
 #footer .footer-middle ul li {
-    margin-left: -14px;
+    margin-left: 16px;
     margin-bottom: 8px;
 }
 #footer .footer-middle ul li::marker {
@@ -154,9 +490,8 @@ a {
 }
 #footer .footer-middle ul.products li {
     list-style: none;
-    margin-left: -30px;
+    margin-left: 0px;
 }
-
 #footer .footer-bottom {
     background-image: url("../images/footer-shape.png");
     background-repeat: no-repeat;
@@ -205,6 +540,3 @@ a {
     gap: 8px;
     transition: all 0.3s ease;
 }
-/*-----------------------------------------------------------------
-                        Footer Section End
--------------------------------------------------------------------*/
