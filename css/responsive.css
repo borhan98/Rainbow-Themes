@@ -142,34 +142,28 @@
     #gallery h3 span {
         font-size: 14px;
     }
-
     /* Contact */
     #contact h3 {
         font-size: 28px;
     }
-
     #contact p {
         font-size: 16px;
         margin-top: 12px;
         margin-bottom: 16px;
     }
-
     #contact button {
         font-size: 16px;
         padding: 4px 10px;
     }
-
     #contact .members-img-wrapper {
         justify-content: space-between;
     }
-
     /* Footer */
     #footer .footer-top h3 {
         font-size: 20px;
         font-weight: 700;
         line-height: 24px;
     }
-
     #footer .footer-top .email-icon {
         left: 10px;
     }

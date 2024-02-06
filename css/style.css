@@ -81,6 +81,11 @@ header .menu ul li a:hover {
     color: #000000;
 }
 
+header .menu ul li ul {
+    background: #DEE2ED;
+    z-index: 9;
+}
+
 .dropdown-toggle::after {
     display: none !important;
 }
@@ -178,6 +183,8 @@ header .banner .elite-author {
     padding: 4px 16px;
     border-radius: 50px;
     margin: 32px auto;
+    z-index: 1;
+    position: relative;
 }
 
 header .banner .elite-author p {
@@ -274,19 +281,14 @@ header .banner button:hover {
 .client-company-logos {
     overflow: hidden;
 }
-
-.client-company-logos>div {
-    animation: scroll-left 30s linear infinite;
+.client-company-logos .clients .client {
+    margin: 0 24px;
 }
-
-@keyframes scroll-left {
-    0% {
-        transform: translateX(100%);
-    }
-
-    100% {
-        transform: translateX(-100%);
-    }
+.client-company-logos .clients .client figure {
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .client-company-logos img {
@@ -392,13 +394,15 @@ header .banner button:hover {
 /* -------------------- Template Slider related Style ---------------------------- */
 #template .slide-wrapper {
     position: relative;
+    padding: 8px;
 }
 
 #template .slide-wrapper .slide-item {
-    max-width: 424px;
+    max-width: 414px;
     margin: 24px 4px;
-    box-shadow: 0px 10px 10px 1px #b8b8b887;
+    box-shadow: 0px 0px 5px 1px #b8b8b887;
     overflow: hidden;
+    border-radius: 12px;
 }
 
 #template .slide-wrapper .slide-item figure {
@@ -484,7 +488,7 @@ header .banner button:hover {
 /* -------------------- Slider dots related Style ---------------------- */
 #template .slide-wrapper .slick-dots {
     position: absolute;
-    bottom: -50px;
+    bottom: -30px;
     left: 0;
     display: flex;
     gap: 16px;
