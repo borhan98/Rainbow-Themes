@@ -8,20 +8,25 @@
     margin: 0px;
     box-sizing: border-box;
 }
+
 a {
     text-decoration: none;
 }
+
 ul,
 li {
     padding: 0;
     margin: 0;
 }
+
 .rating-yellow {
     color: #FCC418;
 }
+
 .rating-gray {
     color: #D4D4D4;
 }
+
 :root {
     --gradient-btn: linear-gradient(90deg, #FE2A5E, #FFA61B);
     --manrope-font: 'Manrope', sans-serif;
@@ -29,43 +34,57 @@ li {
     --footer-bg: radial-gradient(ellipse at top, #307ef3, #04122B 100%);
 }
 
-/*-------------------- Header Section ------------------------------ */
+/*-------------------- Header Navbar Section ------------------------------ */
 header {
-    background: linear-gradient(90deg, #E6EDFA, #F3F5F9, #DCE5F9);
-    min-height: 100vh;
+    background: url("../images/circle-shape-bg-2.png"), url("../images/bar-shape.png"), linear-gradient(90deg, #E6EDFA, #F3F5F9, #DCE5F9);
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    height: 720px;
 }
+
+header nav.navbar {
+    padding: 24px 0;
+}
+
 header .logo {
     display: flex;
     align-items: center;
 }
+
 header .logo img {
     width: 38px;
     height: 38px;
 }
+
 header .logo h3 {
     color: #000000;
     text-transform: uppercase;
     margin-top: 5px;
 }
-header .menu > ul {
+
+header .menu>ul {
     background: #DEE2ED;
     border-radius: 40px;
     padding: 0 8px;
 }
+
 header .menu ul li a {
     display: inline-block;
-    padding: 8px  12px !important;
+    padding: 8px 12px !important;
     color: #444444;
     font-size: 15px;
     font-family: var(--ibm-plex-font);
     transition: all 0.3s ease;
 }
+
 header .menu ul li a:hover {
     color: #000000;
 }
+
 .dropdown-toggle::after {
     display: none !important;
 }
+
 header .menu ul li a .badge {
     color: #FFFFFF;
     font-size: 9px;
@@ -73,6 +92,7 @@ header .menu ul li a .badge {
     font-family: var(--ibm-plex-font);
     background: #72BF40;
 }
+
 header .menu .login-btn,
 header .menu .hire-btn {
     font-weight: 700;
@@ -81,14 +101,173 @@ header .menu .hire-btn {
     border: none;
     padding: 8px 20px;
 }
+
 header .menu .login-btn {
     background: none;
     color: #04122B;
 }
+
 header .menu .hire-btn {
     background: #04122B;
     color: #FFFFFF;
     border-radius: 4px;
+}
+
+/*-------------------- Banner Section ------------------------------ */
+header .banner {
+    position: relative;
+}
+
+header .banner .tech-icons img {
+    padding: 12px;
+    border-radius: 50%;
+    background: #FFFFFF;
+    z-index: 1;
+    opacity: 50%;
+}
+
+header .banner .nextjs-icon {
+    position: absolute;
+    bottom: -100px;
+    left: -10px;
+    animation: roundForward 15s linear infinite forwards;
+}
+
+header .banner .reactjs-icon {
+    position: absolute;
+    bottom: 100px;
+    left: 80px;
+    animation: roundBackward 15s linear infinite forwards;
+}
+
+header .banner .html-icon {
+    position: absolute;
+    bottom: -40px;
+    left: 170px;
+    animation: roundForward 15s linear infinite forwards;
+}
+
+header .banner .vite-icon {
+    position: absolute;
+    bottom: -100px;
+    right: 150px;
+    animation: roundBackward 15s linear infinite forwards;
+}
+
+header .banner .unknown-icon {
+    position: absolute;
+    bottom: 55px;
+    right: 240px;
+    animation: roundForward 15s linear infinite forwards;
+}
+
+header .banner .wordpress-icon {
+    position: absolute;
+    bottom: -10px;
+    right: 10px;
+    animation: roundBackward 15s linear infinite forwards;
+}
+
+header .banner .elite-author {
+    background: #f387441a;
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    padding: 4px 16px;
+    border-radius: 50px;
+    margin: 32px auto;
+}
+
+header .banner .elite-author p {
+    color: #F38844;
+    font-weight: 700;
+    font-family: var(--manrope-font);
+    font-size: 14px;
+    margin-bottom: 0;
+}
+
+@keyframes roundForward {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes roundBackward {
+    0% {
+        transform: rotate(360deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+header .banner h1 {
+    font-weight: 800;
+    font-size: 64px;
+    color: #04122B;
+    font-family: var(--manrope-font);
+    text-align: center;
+    margin: 24px 0;
+    z-index: 2;
+    position: relative;
+}
+
+header .banner h1 span {
+    font-size: 56px;
+    font-weight: 400;
+}
+
+header .banner .descrip {
+    color: #04122B;
+    max-width: 667px;
+    font-size: 18px;
+    font-family: var(--ibm-plex-font);
+    text-align: center;
+    margin: auto;
+    margin-bottom: 24px;
+    z-index: 2;
+    position: relative;
+}
+
+header .banner .banner-btns {
+    margin: 0 auto;
+    width: fit-content;
+    display: flex;
+    gap: 24px;
+}
+
+header .banner button {
+    font-family: var(--ibm-plex-font);
+    font-size: 16px;
+    font-weight: 700;
+    background: #EDEDFA;
+    color: #04122B;
+    border: 1px solid #B8B8B8;
+    width: 166px;
+    height: 48px;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+    z-index: 2;
+}
+
+header .banner button:first-child {
+    background: var(--gradient-btn);
+    color: #FFFFFF;
+    border: 1px solid #FFFFFF;
+}
+
+header .banner button:hover {
+    background: var(--gradient-btn);
+    color: #FFFFFF;
+    border: 1px solid #FFFFFF;
+    font-size: 14px;
 }
 
 /*-------------------- Client Companies ------------------------------ */
@@ -140,6 +319,7 @@ header .menu .hire-btn {
     gap: 1px;
     justify-content: center;
     align-items: center;
+    z-index: 2;
 }
 
 #template .customers p {
@@ -242,7 +422,7 @@ header .menu .hire-btn {
     align-items: center;
 }
 
-#template .slide-item .slide-content h3 {
+#template .slide-item .slide-content h4 {
     color: #04122B;
     font-family: var(--manrope-font);
     font-weight: 700;
@@ -445,7 +625,7 @@ header .menu .hire-btn {
     left: 50%;
     transform: translateX(-50%);
     box-shadow: 0px 0px 60px 20px #060E23;
-
+    z-index: 1;
 }
 
 #gallery h3 span {

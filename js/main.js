@@ -1,3 +1,7 @@
+// AOS Animation
+AOS.init({disable: 'mobile'});
+
+// Slick slider
 $('.slide-wrapper').slick({
   slidesToShow: 2,
   slidesToScroll: 1,

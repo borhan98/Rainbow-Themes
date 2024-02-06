@@ -1,87 +1,186 @@
 @media only screen and (max-width: 576px) {
-    /* Header */
+    header {
+        height: 655px;
+    }
+
+    /* Navbar */
     header .logo img {
-        width: 24px;
-        height: 24px;
+        width: 20px;
+        height: 20px;
     }
+
     header .logo h3 {
-        font-size: 18px;
+        font-size: 14px;
     }
+
+    /* Banner */
+    header .banner h1 {
+        font-size: 32px;
+        margin: 12px 0;
+    }
+
+    header .banner h1 span {
+        font-size: 24px;
+    }
+
+    header .banner h1 span img {
+        opacity: 30%;
+    }
+
+    header .banner p {
+        font-size: 16px;
+    }
+
+    header .banner button {
+        font-size: 14px;
+        font-weight: 500;
+        width: 130px;
+        height: 32px;
+    }
+
+    /* Template */
+    #template {
+        margin-top: -10px;
+        padding: 64px 0;
+    }
+
+    #template .customers {
+        width: 300px;
+        height: 45px;
+        top: -10px;
+    }
+
+    #template .template-content h3 {
+        font-size: 24px;
+    }
+
+    #template .template-content p {
+        font-size: 16px;
+    }
+
+    #template .customers span {
+        padding: 0px 4px;
+        font-size: 14px;
+    }
+
+    #template .customers p {
+        font-size: 14px;
+    }
+
     /* Slider */
     #template .slide-wrapper .slide-item {
         max-width: 290px;
     }
+
     #template .slide-item .slide-content {
         padding: 0 8px;
     }
-    #template .slide-item .slide-content h3 {
+
+    #template .slide-item .slide-content h4 {
         font-size: 18px;
     }
+
     #template .slide-item .slide-content p {
         font-size: 16px;
     }
+
     #template .slide-item .slide-content .sales-price {
         flex-direction: column;
     }
+
     #template .slide-item .slide-content .price {
         display: flex;
         justify-content: space-between;
         align-items: center;
         width: 100%;
     }
+
     #template .slide-item .slide-content .price p {
         margin-top: 25px;
     }
+
+    .prev-arrow,
+    .next-arrow {
+        width: 32px;
+        height: 32px;
+    }
+
+    #template .slide-wrapper .slick-dots {
+        bottom: -24px;
+    }
+
     /* Customer Empowered */
     #empowered .customer-empowered {
-        width: 255px;
-        height: 65px;
+        width: 215px;
+        height: 58px;
     }
+
     #empowered .customer-empowered span {
-        padding: 8px 16px;
+        padding: 4px 12px;
         font-size: 24px;
     }
+
+    #empowered .content h4 {
+        font-size: 24px;
+    }
+
     /* Gallery */
     #gallery .layout {
         flex-direction: column;
     }
+
     #gallery h3 {
+        min-width: 250px;
         padding: 10px;
     }
-    #gallery h3 span {
-        font-size: 20px;
+
+    #gallery h3 img {
+        width: 32px;
+        height: 32px;
     }
+
+    #gallery h3 span {
+        font-size: 14px;
+    }
+
     /* Contact */
     #contact h3 {
         font-size: 28px;
     }
+
     #contact p {
         font-size: 16px;
         margin-top: 12px;
         margin-bottom: 16px;
     }
+
     #contact button {
         font-size: 16px;
-        padding: 12px 24px;
+        padding: 4px 10px;
     }
+
     #contact .members-img-wrapper {
         justify-content: space-between;
     }
+
     /* Footer */
     #footer .footer-top h3 {
         font-size: 20px;
         font-weight: 700;
         line-height: 24px;
     }
+
     #footer .footer-top .email-icon {
         left: 10px;
     }
+
     #footer .footer-top .email-field {
         width: 300px;
         height: 36px;
         font-size: 16px;
         padding-left: 40px;
     }
+
     #footer .footer-top .send-icon {
         position: absolute;
         top: 50%;
@@ -90,10 +189,12 @@
         height: 32px;
         font-size: 14px;
     }
+
     #footer .footer-middle .logo img {
         width: 150px;
         height: auto;
     }
+
     #footer .footer-bottom .social-links a {
         height: 32px;
         width: 32px;
@@ -107,42 +208,52 @@
     #gallery .layout {
         flex-direction: column;
     }
+
     #gallery h3 {
         padding: 10px;
     }
+
     #gallery h3 span {
         font-size: 20px;
     }
+
     /* Contact */
     #contact h3 {
         font-size: 28px;
     }
+
     #contact p {
         font-size: 16px;
         margin-top: 12px;
         margin-bottom: 16px;
     }
+
     #contact button {
         font-size: 16px;
         padding: 12px 24px;
     }
+
     #contact .members-img-wrapper {
         justify-content: space-between;
     }
+
     #contact .members-img-wrapper img {
         max-width: 80px;
     }
+
     /* Footer */
     #footer .footer-top h3 {
         font-size: 24px;
         font-weight: 700;
         line-height: 24px;
     }
+
     #footer .footer-top .email-field {
         width: 300px;
         height: 36px;
         font-size: 16px;
     }
+
     #footer .footer-top .send-icon {
         position: absolute;
         top: 50%;
@@ -160,40 +271,49 @@
         padding: 16px;
         top: 200px;
     }
+
     #gallery h3 span {
         font-size: 24px;
     }
+
     /* Contact */
     #contact h3 {
         font-size: 28px;
     }
+
     #contact p {
         font-size: 16px;
         margin-top: 12px;
         margin-bottom: 16px;
     }
+
     #contact button {
         font-size: 16px;
         padding: 12px 24px;
     }
+
     #contact .members-img-wrapper {
         gap: 8px;
         justify-content: space-between;
     }
+
     #contact .members-img-wrapper img {
         max-width: 80px;
     }
+
     /* Footer */
     #footer .footer-top h3 {
         font-size: 24px;
         font-weight: 700;
         line-height: 24px;
     }
+
     #footer .footer-top .email-field {
         width: 300px;
         height: 36px;
         font-size: 16px;
     }
+
     #footer .footer-top .send-icon {
         position: absolute;
         top: 50%;
@@ -210,6 +330,7 @@
         height: 36px;
         font-size: 16px;
     }
+
     #footer .footer-top .send-icon {
         position: absolute;
         top: 50%;
