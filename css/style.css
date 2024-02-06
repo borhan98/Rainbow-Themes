@@ -60,6 +60,7 @@ header .logo h3 {
     color: #000000;
     text-transform: uppercase;
     margin-top: 5px;
+    margin-left: 5px;
 }
 
 header .menu>ul {
